@@ -1,21 +1,105 @@
-*{
-    margin:0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.container{
-    background: url(3.jpg);
-    height: 100vh;
-    background-size: 100% 100%;
+.container {
+  background: url(3.jpg);
+  height: 100vh;
+  background-size: 100% 100%;
 }
 
 .container .navbar {
-    height: 80px;
-    width: 100%; /* tarayıcımın sağdan sola uzamasını sağladım */
-    background: rgba(214, 99, 22, 0.4);
+  height: 80px;
+  width: 100%; /* tarayıcımın sağdan sola uzamasını sağladım */
+  background: rgba(214, 99, 22, 0.4);
+}
+
+.navbar .logo {
+  display: inline-block;
+  margin-left: 50px; /* soldan sağa doğru bir uzaklaşma */
+  margin-top: 20px;
+}
+
+.navbar .logo a {
+  text-decoration: none; /* alt cizgi özelligi yok olur */
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #f3f3f3;
 }
 
 .navbar ul {
   float: right; /* navbar kategoriler kısmını ayırdım */
   margin-right: 20px;
 }
+
+.navbar ul li {
+  list-style: none; /* başındaki noktalar gitti */
+  display: inline-block; /* kategorileri yan yana getirdi */
+  margin: 0 8px; /* arasını açtım */
+  line-height: 80px; /* yukarıdan aşağı hizalama yaptım */
+}
+
+.navbar ul li a {
+  color: white; /* yazılara beyaz rengini verdim */
+  text-decoration: none;
+  font-size: 20px;
+  padding: 6px 13px;
+  font-family: roboto;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  background: #ff6e00;
+  border-radius: 2px;
+}
+
+.container .center {
+  /* burda yazıları ortaladık önemli */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  user-select: none;
+}
+
+.center h1 {
+  color: rgb(0, 255, 115);
+  font-size: 70px;
+  font-weight: bold;
+  width: 900px;
+  text-align: center;
+}
+
+.center h2 {
+  color: rgb(228, 230, 123);
+  font-size: 50px;
+  font-weight: bold;
+  width: 885px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.container .center button {
+  display: block;
+  margin: auto;
+  border: 100px solid black;
+  height: 30;
+  width: 100px;
+  font-size: 17px;
+  background: rgb(102, 207, 88);
+  border: solid 1px rgb(0, 255, 34);
+  cursor: pointer;
+  border-radius: 25px;
+  font-weight: bold;
+  
+}
+.container .center button:hover{
+    background: #fff;
+}
+
+
+
+
