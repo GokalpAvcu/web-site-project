@@ -1,0 +1,21 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.container{
+    background: url(3.jpg);
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+.container .navbar {
+    height: 80px;
+    width: 100%; /* tarayıcımın sağdan sola uzamasını sağladım */
+    background: rgba(214, 99, 22, 0.4);
+}
+
+.navbar ul {
+  float: right; /* navbar kategoriler kısmını ayırdım */
+  margin-right: 20px;
+}
